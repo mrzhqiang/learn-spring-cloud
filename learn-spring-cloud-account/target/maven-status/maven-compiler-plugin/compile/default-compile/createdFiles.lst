@@ -1,0 +1,9 @@
+learn\springcloud\account\AccountRepository.class
+learn\springcloud\account\Account.class
+learn\springcloud\account\User.class
+learn\springcloud\account\AccountService.class
+learn\springcloud\account\AuthenticationConfiguration.class
+learn\springcloud\account\JpaAccountService.class
+learn\springcloud\account\AccountController.class
+learn\springcloud\account\AccountApplication.class
+learn\springcloud\account\UserRepository.class
