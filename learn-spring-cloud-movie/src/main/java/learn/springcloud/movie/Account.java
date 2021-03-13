@@ -1,6 +1,5 @@
-package learn.springcloud.account;
+package learn.springcloud.movie;
 
-import learn.springcloud.movie.User;
 import lombok.Data;
 
 import java.time.LocalDateTime;

@@ -8,12 +8,15 @@
     <artifactId>learn-spring-cloud-parent</artifactId>
     <packaging>pom</packaging>
     <version>${revision}</version>
+
     <name>Learn Spring Cloud Parent</name>
     <description>Learn project for Spring Cloud</description>
 
     <modules>
         <module>learn-spring-cloud-account</module>
         <module>learn-spring-cloud-movie</module>
+        <module>learn-spring-cloud-discovery-eureka</module>
+        <module>learn-spring-cloud-eureka-ha</module>
     </modules>
 
     <properties>

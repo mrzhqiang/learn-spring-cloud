@@ -2,20 +2,24 @@ server:
   port: 8080
 
 spring:
+  application:
+    name: account
+
   messages:
     basename: i18n.messages
+
   jpa:
     show-sql: true
     generate-ddl: true
     hibernate:
       ddl-auto: update
+
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/lsc?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
     password: 123456
     data: classpath:data.sql
-
 
 logging:
   level:
@@ -25,3 +29,14 @@ logging:
 management:
   security:
     enabled: false
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:123456@localhost:8761/eureka/,http://localhost:8762/eureka/
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      user-url: http://localhost:8080/accounts/

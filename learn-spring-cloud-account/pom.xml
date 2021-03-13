@@ -10,16 +10,19 @@
     </parent>
 
     <artifactId>learn-spring-cloud-account</artifactId>
-    <version>${revision}</version>
     <packaging>jar</packaging>
     <name>Learn Spring Cloud Account</name>
-    <description>Learn project for Spring Cloud</description>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
